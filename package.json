@@ -2,7 +2,7 @@
   "name": "codebridge-youth",
   "dependencies": {
     "@11ty/eleventy": "2.0.1",
-    "@11ty/eleventy-img": "2.0.0",
+    "@11ty/eleventy-img": "5.0.0",
     "archiver": "^5.2.0",
     "extract-zip": "^2.0.1",
     "lodash.chunk": "^4.2.0",
