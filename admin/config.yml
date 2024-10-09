@@ -1,0 +1,2819 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
+  branch: master
+media_folder: theme/assets/images
+public_folder: /assets/images
+collections:
+  - name: pages
+    label: Pages
+    identifier_field: title
+    extension: md
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    folder: cms/pages
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '{{slug}}.html'
+      - &ref_0
+        label: Seo
+        name: seo
+        widget: object
+        collapsed: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: No index
+            name: noindex
+            widget: boolean
+            default: false
+            required: false
+          - label: Open Graph Title
+            name: og:title
+            widget: string
+            required: false
+          - label: Open Graph Image
+            name: og:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Twitter Title
+            name: twitter:title
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Card
+            name: twitter:card
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Site
+            name: twitter:site
+            widget: string
+            required: false
+          - label: Twitter Creator
+            name: twitter:creator
+            widget: string
+            required: false
+          - label: Twitter Image
+            name: twitter:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Additional HTML tags
+            name: additional_tags
+            widget: text
+            required: false
+  - name: testimonials
+    label: Testimonials
+    folder: cms/testimonials
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: If no available. Just type "No name available"
+        name: title
+        label: Name of testimonial speaker
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: What was said?
+        name: f_testimonial-text
+        label: Testimonial text
+        widget: text
+        required: true
+      - hint: >-
+          If this is set, it will mean that this item can appear on that
+          community page.
+        name: f_relevant-community
+        label: Relevant community
+        widget: relation
+        required: false
+        collection: communities
+        value_field: cms/communities/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: false
+      - hint: >-
+          Will show the face of the person who said the quote if its available.
+          If not it will default to no image
+        name: f_picture-of-testimonial-speaker
+        label: Picture of testimonial speaker
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: >-
+          What was the role of the person who said this? eg. Matzikama youth
+          council member
+        name: f_testimonial-speaker-role
+        label: Testimonial speaker role
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: testimonials
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[testimonials].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: post
+    label: Blog Posts
+    folder: cms/post
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Post Body
+        name: body
+        widget: markdown
+        required: false
+      - hint: Which community does this blog post pertain to?
+        name: f_relevant-community
+        label: Relevant community
+        widget: relation
+        required: false
+        collection: communities
+        value_field: cms/communities/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: Who wrote this blog
+        name: f_author
+        label: Author
+        widget: relation
+        required: true
+        collection: team
+        value_field: cms/team/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: A summary of the blog post that appears on blog post grid
+        name: f_post-summary
+        label: Post Summary
+        widget: text
+        required: true
+      - hint: Landscape
+        name: f_main-image
+        label: Main Image
+        widget: object
+        required: true
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: true
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: Add up to 25 images to support this blog post
+        name: f_article-gallery
+        label: Article gallery
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_featured
+        label: Featured?
+        widget: boolean
+        required: false
+        default: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: post
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[post].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: galleries
+    label: Galleries
+    folder: cms/galleries
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_make-homepage-gallery
+        label: Make homepage gallery
+        widget: boolean
+        required: false
+        default: false
+      - hint: What event are these images from?
+        name: f_link-to-event
+        label: Link to event
+        widget: relation
+        required: false
+        collection: event
+        value_field: cms/event/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: false
+      - hint: Upload images here
+        name: f_images
+        label: Images
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: galleries
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[galleries].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: provinces
+    label: Provinces
+    folder: cms/provinces
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: provinces
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[provinces].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: funders
+    label: Funders
+    folder: cms/funders
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_client-logo
+        label: Client Logo
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_website-link
+        label: Website Link
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: funders
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[funders].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: team
+    label: Team Members
+    folder: cms/team
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_profile-picture
+        label: Profile Picture
+        widget: object
+        required: true
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: true
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_team-member-bio
+        label: Team member bio
+        widget: string
+        required: false
+      - hint: ''
+        name: f_role
+        label: Role
+        widget: string
+        required: true
+      - hint: ''
+        name: f_email
+        label: Email
+        widget: string
+        required: false
+      - hint: ''
+        name: f_phone-number
+        label: Phone Number
+        widget: string
+        required: false
+      - hint: ''
+        name: f_twitter-link
+        label: Twitter Link
+        widget: string
+        required: false
+      - hint: ''
+        name: f_facebook-link
+        label: Facebook Link
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: team
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[team].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: youth_council_members
+    label: Youth Council Members
+    folder: cms/youth-council-members
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: Which community youth council does this person serve on
+        name: f_community
+        label: Community
+        widget: relation
+        required: true
+        collection: communities
+        value_field: cms/communities/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: false
+      - hint: Picture of the council member (square format - 500px)
+        name: f_profile-picture
+        label: Profile picture
+        widget: object
+        required: true
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: true
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: For general inquiries by members of the public
+        name: f_email-address
+        label: Email address
+        widget: string
+        required: false
+      - hint: Social media, linkedin etc.
+        name: f_preferred-external-link
+        label: Preferred external link
+        widget: string
+        required: false
+      - hint: Would you like to show this members profile on the community page?
+        name: f_show-member
+        label: Show member
+        widget: boolean
+        required: false
+        default: false
+      - hint: Short bio no longer than 110 characters. If one is no
+        name: f_member-bio
+        label: Member bio
+        widget: text
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: youth-council-members
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[youth-council-members].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: event_filters
+    label: Event Filters
+    folder: cms/event-filters
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Community Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: event-filters
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[event-filters].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: champions
+    label: Champions
+    folder: cms/champions
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: Square format 500px
+        name: f_profile-picture
+        label: Profile Picture
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_contact-number
+        label: Contact Number
+        widget: string
+        required: false
+      - hint: Which community does this person champion
+        name: f_community-2
+        label: Community
+        widget: relation
+        required: true
+        collection: communities
+        value_field: cms/communities/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: ''
+        name: f_email-address
+        label: Email Address
+        widget: string
+        required: false
+      - hint: eg. facebook, twitter, linkedin
+        name: f_facebook
+        label: Preferred external link
+        widget: string
+        required: false
+      - hint: ' Short member bio no longer than 110 characters'
+        name: f_member-bio
+        label: Member Bio
+        widget: text
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: champions
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[champions].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: event
+    label: Events
+    folder: cms/event
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Event information
+        name: body
+        widget: markdown
+        required: false
+      - hint: Making more than two item featured will not work
+        name: f_feature-this-event-on-homepage
+        label: Feature this event on homepage
+        widget: boolean
+        required: false
+        default: false
+      - hint: >-
+          Makes this event visible as a past event and removes it from the
+          events page
+        name: f_archive-event
+        label: Archive event
+        widget: boolean
+        required: false
+        default: false
+      - hint: Select one or multiple communities
+        name: f_event-locations
+        label: Event Locations
+        widget: relation
+        required: true
+        collection: communities
+        value_field: cms/communities/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: This is what people will see the event location as
+        name: f_location-displayed-on-card
+        label: Location displayed on card
+        widget: relation
+        required: true
+        collection: event_filters
+        value_field: cms/event-filters/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: false
+      - hint: 'This will change the header image (recommended size: 2000x600 - 200kb)'
+        name: f_image
+        label: Event image
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: Where is the venue for the event (NOT the same as event location)
+        name: f_venue
+        label: Venue
+        widget: string
+        required: false
+      - hint: Link to a map or website for the venue
+        name: f_venue-link
+        label: Venue link
+        widget: string
+        required: false
+      - hint: If there is an online RSVP form, link it here
+        name: f_rsvp-link
+        label: Event button link
+        widget: string
+        required: false
+      - hint: What should the button say (eg. RSVP)
+        name: f_event-button-labe
+        label: Event button labe
+        widget: string
+        required: false
+      - hint: ''
+        name: f_start-date-time
+        label: Start Date
+        widget: datetime
+        required: true
+      - hint: ''
+        name: f_end-date-time
+        label: End Date
+        widget: datetime
+        required: false
+      - hint: 'Please use this format: 9AM - 4PM'
+        name: f_event-time
+        label: Event Time
+        widget: string
+        required: true
+      - hint: Used on event lists and in the event header
+        name: f_short-description
+        label: Short Description
+        widget: string
+        required: false
+      - hint: Who is the person to be contacted about this event?
+        name: f_champion-in-charge
+        label: Champion in charge
+        widget: relation
+        required: false
+        collection: champions
+        value_field: cms/champions/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: Who should people contact for more information
+        name: f_youth-council-member-in-charge
+        label: Youth council member in charge
+        widget: relation
+        required: false
+        collection: youth_council_members
+        value_field: cms/youth-council-members/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: Upload shots from the event here
+        name: f_event-gallery
+        label: Event Gallery
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: >-
+          This text is for adding any long text, videos, social media posts etc
+          to an after event report. This content should also be posted as a blog
+          if it is highly relevant to stakeholders or community members
+        name: f_event-report
+        label: Event report
+        widget: markdown
+        required: false
+      - hint: >-
+          Will not show if there is no event report. Will show on the right side
+          of the event report as a highlighted piece of information.
+        name: f_event-outcome-1
+        label: Event outcome 1
+        widget: string
+        required: false
+      - hint: >-
+          Will not show if there is no event report. Will show on the right side
+          of the event report as a highlighted piece of information
+        name: f_event-outcome-2
+        label: Event outcome 2
+        widget: string
+        required: false
+      - hint: >-
+          Will not show if there is no event report. Will show on the right side
+          of the event report as a highlighted piece of information
+        name: f_event-outcome-3
+        label: Event outcome 3
+        widget: string
+        required: false
+      - hint: >-
+          Will not show if there is no event report. Will display a large number
+          with this value and the heading "Number of attendees"
+        name: f_number-of-attendees
+        label: Number of attendees
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: event
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[event].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: faq
+    label: FAQs
+    folder: cms/faq
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Question
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_answer
+        label: Answer
+        widget: string
+        required: false
+      - hint: ''
+        name: f_button-label
+        label: Button Label
+        widget: string
+        required: false
+      - hint: ''
+        name: f_button-link-url
+        label: Button Link URL
+        widget: string
+        required: false
+      - hint: Should this FAQ be shown on the homepage?
+        name: f_show-on-homepage
+        label: Show on homepage
+        widget: boolean
+        required: false
+        default: false
+      - hint: Which communities does this FAQ show on?
+        name: f_show-on-community-page
+        label: Show on community page
+        widget: relation
+        required: false
+        collection: communities
+        value_field: cms/communities/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: ''
+        name: f_card-order
+        label: Card Order
+        widget: number
+        required: false
+      - hint: ''
+        name: f_card-icon
+        label: Card Icon
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_background-colour
+        label: Background Colour
+        widget: color
+        required: false
+        enableAlpha: true
+        allowInput: true
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: faq
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[faq].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: communities
+    label: Communities
+    folder: cms/communities
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: In which province does this community reside?
+        name: f_community-province
+        label: Community Province
+        widget: relation
+        required: true
+        collection: provinces
+        value_field: cms/provinces/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: false
+      - hint: 'Angled google map image of the community '
+        name: f_card-background-image
+        label: Card background image
+        widget: object
+        required: true
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: true
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: >-
+          The yellow text at the top of the page beneath the header image. Will
+          not appear if there is nothing written here
+        name: f_community-tagline
+        label: Community Tagline
+        widget: string
+        required: false
+      - hint: >-
+          The grey text that appears next to the community tagline at the top of
+          the page beneath the header image
+        name: f_community-vision
+        label: Community Vision
+        widget: text
+        required: false
+      - hint: ''
+        name: f_municipal-website-url
+        label: Municipal Website URL
+        widget: string
+        required: false
+      - hint: ''
+        name: f_community-survey-url
+        label: Community Survey URL
+        widget: string
+        required: false
+      - hint: ''
+        name: f_facebook-profile-link
+        label: Facebook Profile Link
+        widget: string
+        required: false
+      - hint: >-
+          Images should not be any larger than (max image size: 200kb, max image
+          width: 1000px)
+        name: f_image-gallery
+        label: Image Gallery
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_show-events
+        label: Show Events
+        widget: relation
+        required: true
+        collection: event_filters
+        value_field: cms/event-filters/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: false
+      - hint: Link to Whatsapp group for user to join
+        name: f_whatsapp-link
+        label: Whatsapp Link
+        widget: string
+        required: false
+      - hint: >-
+          This is the number for the person responsible for managing the
+          community. This number will be visible on the website
+        name: f_community-contact-number
+        label: Community contact number
+        widget: string
+        required: false
+      - hint: This is the name of the person the contact number pertains to
+        name: f_community-contact-person
+        label: Community contact person
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: communities
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[communities].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - label: Theme Settings
+    name: settings
+    identifier_field: title
+    extension: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    files:
+      - label: General
+        name: site
+        file: cms/_data/settings/site.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: General
+          - hint: Full domain url (needed for a correct sitemap file)
+            name: domain
+            label: Domain
+            widget: string
+            required: false
+          - name: favicon
+            label: Favicon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: apple_touch_icon
+            label: Apple Touch Icon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: header_additional_content
+            label: Additional Content Header
+            hint: Content here will be placed before </head> tag
+            widget: text
+            required: false
+          - name: footer_additional_content
+            label: Additional Content Footer
+            hint: Content here will be placed before </body> tag
+            widget: text
+            required: false
+          - name: images_optimization
+            label: Images Optimization
+            widget: object
+            collapsed: false
+            fields:
+              - label: Image Formats
+                name: formats
+                widget: select
+                multiple: true
+                options:
+                  - label: Avif
+                    value: avif
+                  - label: Webp
+                    value: webp
+              - label: Image Dimensions
+                name: dimensions
+                widget: select
+                multiple: true
+                options:
+                  - label: '500'
+                    value: 500
+                  - label: '800'
+                    value: 800
+                  - label: '1080'
+                    value: 1080
+                  - label: '1600'
+                    value: 1600
+                  - label: '2000'
+                    value: 2000
+                  - label: '2600'
+                    value: 2600
+      - label: Colors
+        name: colors
+        file: cms/_data/colors.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Colors
+      - label: Texts
+        name: texts
+        file: cms/_data/texts.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Texts
+          - hint: 'Original text: Corona virus pandemic, key: -28aff130'
+            label: Text
+            name: '-28aff130'
+            widget: string
+          - hint: >-
+              Original text: ! All in-person events have been cancelled,
+              postponed or moved online. , key: 39bdb55a
+            label: Text
+            name: 39bdb55a
+            widget: string
+          - hint: 'Original text: Get more information, key: -5b4fbf75'
+            label: Text
+            name: '-5b4fbf75'
+            widget: string
+          - hint: >-
+              Original text: Inform, Empower, Activate the Youth Voice, key:
+              -534daf83
+            label: Text
+            name: '-534daf83'
+            widget: string
+          - hint: "Original text: OUR\_COMMUNITIES, key: 39e56ab3"
+            label: Text
+            name: 39e56ab3
+            widget: string
+          - hint: 'Original text: Frequently asked questions, key: 7c9faae0'
+            label: Text
+            name: 7c9faae0
+            widget: string
+          - hint: 'Original text: ABOUT, key: 3b32b6d'
+            label: Text
+            name: 3b32b6d
+            widget: string
+          - hint: 'Original text: communities, key: -34c755b9'
+            label: Text
+            name: '-34c755b9'
+            widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
+          - hint: 'Original text: Events, key: 7c6ccd39'
+            label: Text
+            name: 7c6ccd39
+            widget: string
+          - hint: 'Original text: News, key: 24fef3'
+            label: Text
+            name: 24fef3
+            widget: string
+          - hint: 'Original text: Contact, key: -64104400'
+            label: Text
+            name: '-64104400'
+            widget: string
+          - hint: 'Original text: Join a community, key: -239e92ec'
+            label: Text
+            name: '-239e92ec'
+            widget: string
+          - hint: 'Original text: Our Mission, key: 3dba0078'
+            label: Text
+            name: 3dba0078
+            widget: string
+          - hint: >-
+              Original text: We seek to empower people and government, through
+              data, technology and innovative-thinking, to become active agents
+              in creating positive social change., key: -31b8eeb
+            label: Text
+            name: '-31b8eeb'
+            widget: text
+          - hint: 'Original text: learn more about us, key: -57899460'
+            label: Text
+            name: '-57899460'
+            widget: string
+          - hint: "Original text: More\_INFO, key: -18f74107"
+            label: Text
+            name: '-18f74107'
+            widget: string
+          - hint: >-
+              Original text: There are currently no community events scheduled.
+              Wanna , key: 5d1975b5
+            label: Text
+            name: 5d1975b5
+            widget: string
+          - hint: 'Original text: suggest one?, key: -66b4e4b'
+            label: Text
+            name: '-66b4e4b'
+            widget: string
+          - hint: "Original text: CONTACT\_US, key: 2541b33e"
+            label: Text
+            name: 2541b33e
+            widget: string
+          - hint: 'Original text: view all events, key: -6788a32d'
+            label: Text
+            name: '-6788a32d'
+            widget: string
+          - hint: 'Original text: How we work, key: -686becd'
+            label: Text
+            name: '-686becd'
+            widget: string
+          - hint: 'Original text: Establish youth networkS, key: 630d9479'
+            label: Text
+            name: 630d9479
+            widget: string
+          - hint: >-
+              Original text: Codebridge Youth creates hubs where young people
+              can learn about how to use technology to help address social
+              problems., key: -c0d3320
+            label: Text
+            name: '-c0d3320'
+            widget: text
+          - hint: 'Original text: See our communities, key: 6952ad86'
+            label: Text
+            name: 6952ad86
+            widget: string
+          - hint: 'Original text: Empower youth Representation, key: -242e3f23'
+            label: Text
+            name: '-242e3f23'
+            widget: string
+          - hint: >-
+              Original text: We empower youth to partner with private entities,
+              civil society and local government to establish Codebridge Youth
+              Forums., key: -7bb00e2a
+            label: Text
+            name: '-7bb00e2a'
+            widget: text
+          - hint: 'Original text: Read youth testimonials, key: 1d108a8b'
+            label: Text
+            name: 1d108a8b
+            widget: string
+          - hint: "Original text: DRIVE\_YOUTH PARTICIPATION, key: 3f78c63e"
+            label: Text
+            name: 3f78c63e
+            widget: string
+          - hint: >-
+              Original text: We host exciting youth driven events that grow the
+              community of youth actors and increase active public
+              participation., key: -5b3b3112
+            label: Text
+            name: '-5b3b3112'
+            widget: text
+          - hint: 'Original text: Explore our events, key: 6fb7dc3a'
+            label: Text
+            name: 6fb7dc3a
+            widget: string
+          - hint: 'Original text: Youth Communities, key: 4d25f03a'
+            label: Text
+            name: 4d25f03a
+            widget: string
+          - hint: "Original text: Join\_a COMMUNITY, key: 5b4c2c74"
+            label: Text
+            name: 5b4c2c74
+            widget: string
+          - hint: 'Original text: Upcoming events, key: -5e1bbf83'
+            label: Text
+            name: '-5e1bbf83'
+            widget: string
+          - hint: 'Original text: See all events, key: 39c76e85'
+            label: Text
+            name: 39c76e85
+            widget: string
+          - hint: "Original text: EVENT\_INFO, key: 5ce80f14"
+            label: Text
+            name: 5ce80f14
+            widget: string
+          - hint: 'Original text: We''ve got nothing to show you here, key: -6f700512'
+            label: Text
+            name: '-6f700512'
+            widget: string
+          - hint: "Original text: Codebridge\_News, key: -2ded2283"
+            label: Text
+            name: '-2ded2283'
+            widget: string
+          - hint: 'Original text: Read all news, key: 36a8fd1c'
+            label: Text
+            name: 36a8fd1c
+            widget: string
+          - hint: 'Original text: Testimonials, key: 1590c3d4'
+            label: Text
+            name: 1590c3d4
+            widget: string
+          - hint: 'Original text: Gallery, key: 57850f32'
+            label: Text
+            name: 57850f32
+            widget: string
+          - hint: 'Original text: Frequently Asked Questions, key: -475b7d60'
+            label: Text
+            name: '-475b7d60'
+            widget: string
+          - hint: 'Original text: Subscribe to our newsletter, key: 35c884dc'
+            label: Text
+            name: 35c884dc
+            widget: string
+          - hint: 'Original text: All done! , key: -4bc0cd60'
+            label: Text
+            name: '-4bc0cd60'
+            widget: string
+          - hint: 'Original text: Thanks for subscribing!, key: -bf96038'
+            label: Text
+            name: '-bf96038'
+            widget: string
+          - hint: 'Original text: Oops!, key: 48d687e'
+            label: Text
+            name: 48d687e
+            widget: string
+          - hint: >-
+              Original text:  Something went wrong with your subscription!, key:
+              775bed38
+            label: Text
+            name: 775bed38
+            widget: string
+          - hint: 'Original text: Sitemap, key: -1f9bbb6b'
+            label: Text
+            name: '-1f9bbb6b'
+            widget: string
+          - hint: 'Original text: About, key: 3c2336d'
+            label: Text
+            name: 3c2336d
+            widget: string
+          - hint: 'Original text: Communities, key: 2ea25227'
+            label: Text
+            name: 2ea25227
+            widget: string
+          - hint: 'Original text: Codebridge Headquarters, key: -510e96af'
+            label: Text
+            name: '-510e96af'
+            widget: string
+          - hint: 'Original text: 1 Thicket Street, Newlands, 7725, key: -bcd16e7'
+            label: Text
+            name: '-bcd16e7'
+            widget: string
+          - hint: 'Original text: codebridgeyouth@openup.org.za, key: 3b8c2ff7'
+            label: Text
+            name: 3b8c2ff7
+            widget: string
+          - hint: 'Original text: Codebridge is run by , key: -355faad8'
+            label: Text
+            name: '-355faad8'
+            widget: string
+          - hint: 'Original text: OpenUp, key: -72d74d5b'
+            label: Text
+            name: '-72d74d5b'
+            widget: string
+          - hint: >-
+              Original text: , a non-profit organisation registered with the
+              South African Department of Social Development, number
+              133-850NPO., key: -64726f61
+            label: Text
+            name: '-64726f61'
+            widget: text
+          - hint: "Original text: UPCOMING\_EVENT, key: -594bee0a"
+            label: Text
+            name: '-594bee0a'
+            widget: string
+          - hint: "Original text: Past\_EVENT, key: 3c57488c"
+            label: Text
+            name: 3c57488c
+            widget: string
+          - hint: 'Original text: About this event, key: 3e67952b'
+            label: Text
+            name: 3e67952b
+            widget: string
+          - hint: "Original text: EVENT\_DATE, key: 5ce59a14"
+            label: Text
+            name: 5ce59a14
+            widget: string
+          - hint: 'Original text: -, key: 2d'
+            label: Text
+            name: 2d
+            widget: string
+          - hint: "Original text: EVENT\_TIME, key: 5cecfd33"
+            label: Text
+            name: 5cecfd33
+            widget: string
+          - hint: 'Original text: VENUE, key: 4dc724f'
+            label: Text
+            name: 4dc724f
+            widget: string
+          - hint: 'Original text: Venue information, key: 737e9cdb'
+            label: Text
+            name: 737e9cdb
+            widget: string
+          - hint: 'Original text: Event Report, key: b2e49ba'
+            label: Text
+            name: b2e49ba
+            widget: string
+          - hint: 'Original text: Number of attendEes, key: 28a97f27'
+            label: Text
+            name: 28a97f27
+            widget: string
+          - hint: 'Original text: Key outcomes, key: 1ff3422'
+            label: Text
+            name: 1ff3422
+            widget: string
+          - hint: 'Original text: Event Gallery, key: da9138c'
+            label: Text
+            name: da9138c
+            widget: string
+          - hint: 'Original text: Similar Events, key: -8542d2'
+            label: Text
+            name: '-8542d2'
+            widget: string
+          - hint: 'Original text: Get in touch, key: -5230a9d2'
+            label: Text
+            name: '-5230a9d2'
+            widget: string
+          - hint: 'Original text: About Codebridge, key: f8bf669'
+            label: Text
+            name: f8bf669
+            widget: string
+          - hint: 'Original text: Send us a message, key: 20046dbe'
+            label: Text
+            name: 20046dbe
+            widget: string
+          - hint: 'Original text: Our headquarters, key: 1f05419b'
+            label: Text
+            name: 1f05419b
+            widget: string
+          - hint: >-
+              Original text: While we work in various communities around South
+              Africa, we are based in Cape Town., key: 748d9a36
+            label: Text
+            name: 748d9a36
+            widget: string
+          - hint: 'Original text: Find us on google maps, key: 1b762a98'
+            label: Text
+            name: 1b762a98
+            widget: string
+          - hint: 'Original text: Address, key: 1ed033d4'
+            label: Text
+            name: 1ed033d4
+            widget: string
+          - hint: 'Original text: 1 Thicket Street, Newlands, key: -3dce0dfe'
+            label: Text
+            name: '-3dce0dfe'
+            widget: string
+          - hint: 'Original text: Cape Town, 7708, key: -2439cb25'
+            label: Text
+            name: '-2439cb25'
+            widget: string
+          - hint: 'Original text: South Africa, key: 2754886d'
+            label: Text
+            name: 2754886d
+            widget: string
+          - hint: 'Original text: Contact information, key: -2e3f22f4'
+            label: Text
+            name: '-2e3f22f4'
+            widget: string
+          - hint: 'Original text: Email:, key: 7bec143e'
+            label: Text
+            name: 7bec143e
+            widget: string
+          - hint: "Original text: \_codebridgeyouth@openup.org.za, key: -58888ca9"
+            label: Text
+            name: '-58888ca9'
+            widget: string
+          - hint: 'Original text: Call:, key: 3dde17c'
+            label: Text
+            name: 3dde17c
+            widget: string
+          - hint: "Original text: \_+27 21 671 6306, key: 606951c4"
+            label: Text
+            name: 606951c4
+            widget: string
+          - hint: 'Original text: Contact form, key: 5278c0e4'
+            label: Text
+            name: 5278c0e4
+            widget: string
+          - hint: 'Original text: * Required fields, key: 5d2d1a44'
+            label: Text
+            name: 5d2d1a44
+            widget: string
+          - hint: 'Original text: First Name*, key: -33504eb1'
+            label: Text
+            name: '-33504eb1'
+            widget: string
+          - hint: 'Original text: Last Name*, key: -6eb65f0b'
+            label: Text
+            name: '-6eb65f0b'
+            widget: string
+          - hint: 'Original text: Email Address*, key: -42920906'
+            label: Text
+            name: '-42920906'
+            widget: string
+          - hint: 'Original text: Organisation, key: 441e54fa'
+            label: Text
+            name: 441e54fa
+            widget: string
+          - hint: 'Original text: Cellphone Number, key: 5d264dd'
+            label: Text
+            name: 5d264dd
+            widget: string
+          - hint: 'Original text: Your Message*, key: -7854b1b0'
+            label: Text
+            name: '-7854b1b0'
+            widget: string
+          - hint: >-
+              Original text: Your information will not be shared with any third
+              parties!, key: 175f724c
+            label: Text
+            name: 175f724c
+            widget: string
+          - hint: >-
+              Original text: Subscribe to Codebridge Youth Newsletter, key:
+              3488bd01
+            label: Text
+            name: 3488bd01
+            widget: string
+          - hint: 'Original text: Submitted!, key: -4e96d5a'
+            label: Text
+            name: '-4e96d5a'
+            widget: string
+          - hint: >-
+              Original text: Thanks for getting in touch! Someone from our team
+              will be in touch with your soon., key: 22722fc7
+            label: Text
+            name: 22722fc7
+            widget: string
+          - hint: >-
+              Original text: Oops! Something went wrong while submitting the
+              form., key: -7c112e99
+            label: Text
+            name: '-7c112e99'
+            widget: string
+          - hint: "Original text: CODEBRIDGE\_YOUTH, key: -142206b7"
+            label: Text
+            name: '-142206b7'
+            widget: string
+          - hint: 'Original text: Join us on social media, key: 7d992726'
+            label: Text
+            name: 7d992726
+            widget: string
+          - hint: 'Original text: Contact this community, key: -42b7ef9'
+            label: Text
+            name: '-42b7ef9'
+            widget: string
+          - hint: "Original text: JOIN\_THIS\_COMMUNITY, key: -5a849983"
+            label: Text
+            name: '-5a849983'
+            widget: string
+          - hint: "Original text: WHY\_YOU\_SHOULD\_JOIN, key: -6f921422"
+            label: Text
+            name: '-6f921422'
+            widget: string
+          - hint: >-
+              Original text: Work with other youth to make your voice heard on
+              issues that matter, key: -3a60393b
+            label: Text
+            name: '-3a60393b'
+            widget: string
+          - hint: >-
+              Original text: Engage effectively with government to make things
+              happen, key: 21693810
+            label: Text
+            name: '21693810'
+            widget: string
+          - hint: >-
+              Original text: Work with others and become a leader in your
+              community, key: 6e27acfd
+            label: Text
+            name: 6e27acfd
+            widget: string
+          - hint: >-
+              Original text: Be part of a Youth Hub that can keep your
+              municipality accountable, key: -6fb2e932
+            label: Text
+            name: '-6fb2e932'
+            widget: string
+          - hint: 'Original text: Community Leaders, key: -1d6df8ed'
+            label: Text
+            name: '-1d6df8ed'
+            widget: string
+          - hint: 'Original text: Community Champion, key: 67faab00'
+            label: Text
+            name: 67faab00
+            widget: string
+          - hint: >-
+              Original text: This community does not have a champion... yet! ,
+              key: -3e9b4610
+            label: Text
+            name: '-3e9b4610'
+            widget: string
+          - hint: 'Original text: Get in touch to apply, key: -3d2bc4c5'
+            label: Text
+            name: '-3d2bc4c5'
+            widget: string
+          - hint: 'Original text: Youth council Members, key: -3cd7c0f3'
+            label: Text
+            name: '-3cd7c0f3'
+            widget: string
+          - hint: >-
+              Original text: A Youth Council has not been established in this
+              community yet. Please , key: -44da02e8
+            label: Text
+            name: '-44da02e8'
+            widget: string
+          - hint: 'Original text: contact us, key: 8556e9e'
+            label: Text
+            name: 8556e9e
+            widget: string
+          - hint: 'Original text:  for more information., key: -466d844a'
+            label: Text
+            name: '-466d844a'
+            widget: string
+          - hint: 'Original text: News from this community, key: 6775ef70'
+            label: Text
+            name: 6775ef70
+            widget: string
+          - hint: 'Original text: Community Gallery, key: -2c21de25'
+            label: Text
+            name: '-2c21de25'
+            widget: string
+          - hint: >-
+              Original text: No upcoming events. Please check back soon!, key:
+              5deca0ab
+            label: Text
+            name: 5deca0ab
+            widget: string
+          - hint: 'Original text: Past events, key: 13e134c7'
+            label: Text
+            name: 13e134c7
+            widget: string
+          - hint: >-
+              Original text: No past events... yet! Please check back soon!,
+              key: -4f386a12
+            label: Text
+            name: '-4f386a12'
+            widget: string
+          - hint: 'Original text: Join a community on Whatsapp, key: 3b89e5c7'
+            label: Text
+            name: 3b89e5c7
+            widget: string
+          - hint: 'Original text: Select a community, key: 295f11e6'
+            label: Text
+            name: 295f11e6
+            widget: string
+          - hint: 'Original text: Bergrivier, key: -32a1e2d1'
+            label: Text
+            name: '-32a1e2d1'
+            widget: string
+          - hint: 'Original text: Cape Agulhas, key: -11b77c10'
+            label: Text
+            name: '-11b77c10'
+            widget: string
+          - hint: 'Original text: Cederberg, key: 267cea87'
+            label: Text
+            name: 267cea87
+            widget: string
+          - hint: 'Original text: Matzikama, key: -3c9cc5a7'
+            label: Text
+            name: '-3c9cc5a7'
+            widget: string
+          - hint: >-
+              Original text: A member of the Codebridge team will add you to
+              this community's Whatsapp channel. Your personal information will
+              not be shared with any third parties. , key: -5408ef72
+            label: Text
+            name: '-5408ef72'
+            widget: text
+          - hint: >-
+              Original text: You will be added to this communities Whatsapp
+              group soon., key: -4f3a1f56
+            label: Text
+            name: '-4f3a1f56'
+            widget: string
+          - hint: >-
+              Original text: Bridging the gaps between government and citizens,
+              key: 1e639331
+            label: Text
+            name: '1e639331'
+            widget: string
+          - hint: 'Original text: Meet the team, key: -38e13bb'
+            label: Text
+            name: '-38e13bb'
+            widget: string
+          - hint: 'Original text: Our vision, key: -2ba89ca4'
+            label: Text
+            name: '-2ba89ca4'
+            widget: string
+          - hint: >-
+              Original text: Codebridge Youth is a hub for learning, innovation
+              and collaboration focused on introducing and advancing both
+              government and citizens through the use of civic technology to aid
+              in problem-solving and data-driven decision making., key: 3cfe5dc0
+            label: Text
+            name: 3cfe5dc0
+            widget: text
+          - hint: 'Original text: Meet our team, key: -4513f1b6'
+            label: Text
+            name: '-4513f1b6'
+            widget: string
+          - hint: 'Original text: Our approach, key: 43f121c'
+            label: Text
+            name: 43f121c
+            widget: string
+          - hint: >-
+              Original text: We establish Youth Councils in partnership with the
+              government to enhance and re-dress public participation structures
+              and the way consultation and active participation are done. We
+              provide stakeholders with a means to re-engineer civic engagement
+              in the 4th Industrial Revolution to enable Youth and communities
+              with tools, skills and relationships to bring about social
+              transformation and to help shape governance structures and systems
+              that work in their reality., key: -35f80098
+            label: Text
+            name: '-35f80098'
+            widget: text
+          - hint: 'Original text: Our team, key: 3796d1'
+            label: Text
+            name: 3796d1
+            widget: string
+          - hint: 'Original text: Contact us, key: 7f274abe'
+            label: Text
+            name: 7f274abe
+            widget: string
+          - hint: 'Original text: Who supports us, key: 3e645038'
+            label: Text
+            name: '3e645038'
+            widget: string
+          - hint: "Original text: GET\_IN\_TOUCH, key: -161051f2"
+            label: Text
+            name: '-161051f2'
+            widget: string
+          - hint: 'Original text: Registration form, key: -68eb2055'
+            label: Text
+            name: '-68eb2055'
+            widget: string
+          - hint: >-
+              Original text: Choose which community you would like to join and
+              fill in your details to be added to our community database., key:
+              f71c54
+            label: Text
+            name: f71c54
+            widget: text
+          - hint: 'Original text: Community*, key: -384d567f'
+            label: Text
+            name: '-384d567f'
+            widget: string
+          - hint: 'Original text: Select a Community, key: -5f2ece3a'
+            label: Text
+            name: '-5f2ece3a'
+            widget: string
+          - hint: 'Original text: Saldanha Bay, key: -4eeaa2da'
+            label: Text
+            name: '-4eeaa2da'
+            widget: string
+          - hint: 'Original text: Stellenbosch, key: 5734a69e'
+            label: Text
+            name: 5734a69e
+            widget: string
+          - hint: 'Original text: uMngeni, key: -49234ef1'
+            label: Text
+            name: '-49234ef1'
+            widget: string
+          - hint: 'Original text: Rosh Pinah, key: -13ea97d2'
+            label: Text
+            name: '-13ea97d2'
+            widget: string
+          - hint: >-
+              Original text: Thank you for registering to join our community.,
+              key: 2f0d0f19
+            label: Text
+            name: 2f0d0f19
+            widget: string
+          - hint: >-
+              Original text: Your registration is being processed, we will be in
+              touch with you soon!, key: -54958b5
+            label: Text
+            name: '-54958b5'
+            widget: string
+          - hint: 'Original text: Community Events, key: -353dbe90'
+            label: Text
+            name: '-353dbe90'
+            widget: string
+          - hint: 'Original text: Upcoming Events, key: 6b492c9d'
+            label: Text
+            name: 6b492c9d
+            widget: string
+          - hint: 'Original text: All Events, key: 7fb7b0b8'
+            label: Text
+            name: 7fb7b0b8
+            widget: string
+          - hint: 'Original text: Stellebosch, key: 4c7f96ea'
+            label: Text
+            name: 4c7f96ea
+            widget: string
+          - hint: 'Original text: Past Events, key: -22b9df19'
+            label: Text
+            name: '-22b9df19'
+            widget: string
+          - hint: 'Original text: All Past Events, key: -72f76b38'
+            label: Text
+            name: '-72f76b38'
+            widget: string
+          - hint: 'Original text: Swartland, key: 3035fbca'
+            label: Text
+            name: 3035fbca
+            widget: string
+          - hint: 'Original text: Coming soon!, key: -717a9fb9'
+            label: Text
+            name: '-717a9fb9'
+            widget: string
+          - hint: 'Original text: Follow us on Facebook, key: 287e1db4'
+            label: Text
+            name: 287e1db4
+            widget: string
+          - hint: |-
+              Original text:  for more information.
+                      , key: 7c44b714
+            label: Text
+            name: 7c44b714
+            widget: string
+          - hint: 'Original text: Share this post:, key: -62ad1567'
+            label: Text
+            name: '-62ad1567'
+            widget: string
+          - hint: >-
+              Original text: This is some text inside of a div block., key:
+              7635fb4f
+            label: Text
+            name: 7635fb4f
+            widget: string
+          - hint: 'Original text: Civic-tech Organisation, key: -5fc86eff'
+            label: Text
+            name: '-5fc86eff'
+            widget: string
+          - hint: 'Original text: Contributor, key: -d8df745'
+            label: Text
+            name: '-d8df745'
+            widget: string
+          - hint: 'Original text: Article gallery, key: -4c6bbdf8'
+            label: Text
+            name: '-4c6bbdf8'
+            widget: string
+          - hint: 'Original text: More news articles, key: -c3a2881'
+            label: Text
+            name: '-c3a2881'
+            widget: string
+          - hint: 'Original text: See all news articles, key: -3aea9a02'
+            label: Text
+            name: '-3aea9a02'
+            widget: string
+          - hint: 'Original text: Community News, key: -d17eb16'
+            label: Text
+            name: '-d17eb16'
+            widget: string
+          - hint: >-
+              Original text: This is where you will find updates, event
+              information and news from all our communities! For more frequent
+              updates, follow us on Facebook., key: -75905416
+            label: Text
+            name: '-75905416'
+            widget: text
+          - hint: 'Original text: Follow us on facebook, key: 24a3b994'
+            label: Text
+            name: 24a3b994
+            widget: string
+          - hint: 'Original text: Latest news, key: 79e72fac'
+            label: Text
+            name: 79e72fac
+            widget: string
+      - label: Links
+        name: links
+        file: cms/_data/links.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Links
+          - hint: 'Original link: http://sacoronavirus.co.za, key: 41678d3c'
+            label: Link
+            name: 41678d3c
+            widget: string
+          - hint: 'Original link: #communities, key: -277db9bc'
+            label: Link
+            name: '-277db9bc'
+            widget: string
+          - hint: 'Original link: #faqs, key: 21d0ec0'
+            label: Link
+            name: 21d0ec0
+            widget: string
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: /about/, key: 61642f31'
+            label: Link
+            name: 61642f31
+            widget: string
+          - hint: 'Original link: /events/, key: -3fb480d9'
+            label: Link
+            name: '-3fb480d9'
+            widget: string
+          - hint: 'Original link: /news/, key: 567194ed'
+            label: Link
+            name: 567194ed
+            widget: string
+          - hint: 'Original link: /contact/, key: 16bdc13e'
+            label: Link
+            name: 16bdc13e
+            widget: string
+          - hint: 'Original link: /join/, key: 563d8d76'
+            label: Link
+            name: 563d8d76
+            widget: string
+          - hint: 'Original link: #testimonials, key: -5850aca9'
+            label: Link
+            name: '-5850aca9'
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: >-
+              Original link: https://goo.gl/maps/qUQyxU9wKT5gt6jM8, key:
+              -7e9ad7b3
+            label: Link
+            name: '-7e9ad7b3'
+            widget: string
+          - hint: >-
+              Original link:
+              mailto:codebridgeyouth@openup.org.za?subject=Hey%20there!, key:
+              2c6425e5
+            label: Link
+            name: 2c6425e5
+            widget: string
+          - hint: 'Original link: https://twitter.com/codebridgey, key: 237f8ecb'
+            label: Link
+            name: 237f8ecb
+            widget: string
+          - hint: >-
+              Original link: https://www.facebook.com/codebridgeyouth/, key:
+              -cbf971e
+            label: Link
+            name: '-cbf971e'
+            widget: string
+          - hint: >-
+              Original link: https://www.instagram.com/codebridge.youth/, key:
+              4cf10124
+            label: Link
+            name: 4cf10124
+            widget: string
+          - hint: 'Original link: http://www.openup.org.za, key: 7851b231'
+            label: Link
+            name: 7851b231
+            widget: string
+          - hint: 'Original link: #contact-form, key: -1ab17e0c'
+            label: Link
+            name: '-1ab17e0c'
+            widget: string
+          - hint: >-
+              Original link: https://goo.gl/maps/Eu8ceYYeW3YV4yjKA, key:
+              60907823
+            label: Link
+            name: '60907823'
+            widget: string
+          - hint: 'Original link: #events, key: -117e0504'
+            label: Link
+            name: '-117e0504'
+            widget: string
+          - hint: 'Original link: #How-we-work, key: 4de95610'
+            label: Link
+            name: 4de95610
+            widget: string
+          - hint: 'Original link: #Team, key: 214ed20'
+            label: Link
+            name: 214ed20
+            widget: string
+          - hint: 'Original link: #upcoming-events, key: 63f3e067'
+            label: Link
+            name: 63f3e067
+            widget: string
+          - hint: 'Original link: #past-events, key: 6d722b31'
+            label: Link
+            name: 6d722b31
+            widget: string
+          - hint: >-
+              Original link: https://www.facebook.com/codebridgeyouth, key:
+              -4279cb13
+            label: Link
+            name: '-4279cb13'
+            widget: string
+          - hint: 'Original link: javascript:fbshareCurrentPage(), key: -76b9814d'
+            label: Link
+            name: '-76b9814d'
+            widget: string
+          - hint: 'Original link: javascript:tweet(), key: -725b45db'
+            label: Link
+            name: '-725b45db'
+            widget: string
+      - label: Images
+        name: images
+        file: cms/_data/images.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Images
+          - label: Image
+            name: i279ce8a2
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i24b1f38
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i62126445
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i9062cb2
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i69d9e81
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: ie602c3e
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: ia93d679
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i12b5a4cf
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i46c85f18
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 9c05ac4
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i24ed0f66
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-430f6dbf'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2dc65b4d'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-1d420c24'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 1833a4ca
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '2489e905'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-19e42189'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 155b77d8
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-39c4cb7c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-39b0a89f'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 61e729c7
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-9342378'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2095420a
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 90cbfcf
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 22cc6c01
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-20bca5b3'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-744f70b7'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 4a5ea78c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 74280d0e
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-484ee13e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4a860b35'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-68334cd0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 6dddbf38
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4441152b'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-628573ba'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 36c5e456
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-696592de'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 6d0814ad
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2c643781
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '24663399'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-1fc5e0c4'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 600d5a6e
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 39c99e3d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 26c646fc
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+local_backend: true
+publish_mode: editorial_workflow

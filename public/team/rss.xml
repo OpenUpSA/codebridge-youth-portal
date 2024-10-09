@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Team Members </title>
+    <description>Team Members  Feed</description>
+    <link></link>
+    <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+    <atom:link href="/team/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Shaun Russell</title>
+            
+            <link>/team/shaun-russell/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/team/shaun-russell/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Matthew Stark</title>
+            
+            <link>/team/matthew-stark/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/team/matthew-stark/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Khumo Sello</title>
+            
+            <link>/team/khumo-sello/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/team/khumo-sello/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Katlego Mohlabane</title>
+            
+            <link>/team/katlego-mohlabane/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/team/katlego-mohlabane/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Damian Pool</title>
+            
+            <link>/team/damian-pool/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/team/damian-pool/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Adrian Kearns</title>
+            
+            <link>/team/adrian-kearns/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/team/adrian-kearns/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+  </channel>
+</rss>

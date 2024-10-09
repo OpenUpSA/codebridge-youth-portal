@@ -1,0 +1,17 @@
+---
+f_show-member: true
+title: Gherisha Landsberg
+slug: gherisha-landsberg
+f_profile-picture:
+  url: >-
+    https://cdn.prod.website-files.com/5d2709341443e07ee7ccd710/63187859d30e5ed171aa7d72_WhatsApp%20Image%202022-08-10%20at%2012.52.03%20PM%20(4).jpg
+  alt: null
+f_community: cms/communities/rosh-pinah.md
+updated-on: '2022-09-07T10:54:20.232Z'
+created-on: '2022-08-10T11:10:02.150Z'
+published-on: '2022-09-07T11:14:46.917Z'
+layout: '[youth-council-members].html'
+tags: youth-council-members
+---
+
+

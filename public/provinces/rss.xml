@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Provinces </title>
+    <description>Provinces  Feed</description>
+    <link></link>
+    <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+    <atom:link href="/provinces/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Western Cape</title>
+            
+            <link>/provinces/western-cape/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/western-cape/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Northern Cape</title>
+            
+            <link>/provinces/northern-cape/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/northern-cape/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>North West</title>
+            
+            <link>/provinces/north-west/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/north-west/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Namibia</title>
+            
+            <link>/provinces/namibia/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/namibia/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Mpumalanga</title>
+            
+            <link>/provinces/mpumalanga/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/mpumalanga/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Limpopo</title>
+            
+            <link>/provinces/limpopo/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/limpopo/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>KwaZulu-Natal</title>
+            
+            <link>/provinces/kwazulu-natal/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/kwazulu-natal/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Gauteng</title>
+            
+            <link>/provinces/gauteng/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/gauteng/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Free State</title>
+            
+            <link>/provinces/free-state/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/free-state/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Eastern Cape</title>
+            
+            <link>/provinces/eastern-cape/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/provinces/eastern-cape/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+  </channel>
+</rss>

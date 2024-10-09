@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Event Filters </title>
+    <description>Event Filters  Feed</description>
+    <link></link>
+    <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+    <atom:link href="/event-filters/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Witzenberg</title>
+            
+            <link>/event-filters/witzenberg/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/witzenberg/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>uMngeni</title>
+            
+            <link>/event-filters/umngeni/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/umngeni/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Swartland</title>
+            
+            <link>/event-filters/swartland/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/swartland/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Stellenbosch</title>
+            
+            <link>/event-filters/stellenbosch/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/stellenbosch/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Saldanha Bay</title>
+            
+            <link>/event-filters/saldanha-bay/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/saldanha-bay/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Rosh Pinah</title>
+            
+            <link>/event-filters/rosh-pinah/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/rosh-pinah/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Multiple Communities</title>
+            
+            <link>/event-filters/multiple-communities/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/multiple-communities/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Matzikama</title>
+            
+            <link>/event-filters/matzikama/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/matzikama/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Kouga</title>
+            
+            <link>/event-filters/kouga/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/kouga/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Cederberg</title>
+            
+            <link>/event-filters/cederberg/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/cederberg/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Cape Agulhas</title>
+            
+            <link>/event-filters/cape-agulhas/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/cape-agulhas/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Bergrivier</title>
+            
+            <link>/event-filters/bergrivier/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/bergrivier/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>All Communities</title>
+            
+            <link>/event-filters/all-communities/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/event-filters/all-communities/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+  </channel>
+</rss>

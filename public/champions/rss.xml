@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Champions </title>
+    <description>Champions  Feed</description>
+    <link></link>
+    <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+    <atom:link href="/champions/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Portia Jansen</title>
+            
+            <link>/champions/portia-jansen/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/portia-jansen/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Naomi Betana</title>
+            
+            <link>/champions/naomi-betana/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/naomi-betana/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Luzeth Smith</title>
+            
+            <link>/champions/luzeth-smith/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/luzeth-smith/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Laurenzo Fortuin</title>
+            
+            <link>/champions/laurenzo-fortuin/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/laurenzo-fortuin/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Jeremy Maarman</title>
+            
+            <link>/champions/jeremy-maarman/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/jeremy-maarman/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Elizma Titus</title>
+            
+            <link>/champions/elizma-titus/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/elizma-titus/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Doreen Sikhondo</title>
+            
+            <link>/champions/doreen-sikhondo/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/doreen-sikhondo/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Annakleta Mukumbi </title>
+            
+            <link>/champions/annakleta-mukumbi/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/champions/annakleta-mukumbi/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+  </channel>
+</rss>

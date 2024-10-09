@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Communities </title>
+    <description>Communities  Feed</description>
+    <link></link>
+    <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+    <atom:link href="/communities/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Witzenberg</title>
+            
+            <link>/communities/witzenberg/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/communities/witzenberg/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Stellenbosch</title>
+            
+            <link>/communities/stellenbosch/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/communities/stellenbosch/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Rosh Pinah</title>
+            
+            <link>/communities/rosh-pinah/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/communities/rosh-pinah/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Matzikama</title>
+            
+            <link>/communities/matzikama/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/communities/matzikama/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Cederberg</title>
+            
+            <link>/communities/cederberg/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/communities/cederberg/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Cape Agulhas</title>
+            
+            <link>/communities/cape-agulhas/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/communities/cape-agulhas/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Bergrivier</title>
+            
+            <link>/communities/bergrivier/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/communities/bergrivier/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+  </channel>
+</rss>

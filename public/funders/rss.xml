@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Funders </title>
+    <description>Funders  Feed</description>
+    <link></link>
+    <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+    <atom:link href="/funders/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Witzenberg Justice Coalition</title>
+            
+            <link>/funders/witzenberg-justice-coalition/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/witzenberg-justice-coalition/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Trevali Mining Corporation</title>
+            
+            <link>/funders/trevali-mining-corporation/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/trevali-mining-corporation/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Open Society Foundation </title>
+            
+            <link>/funders/open-society-foundation/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/open-society-foundation/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>My Voice</title>
+            
+            <link>/funders/my-voice/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/my-voice/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Luminate</title>
+            
+            <link>/funders/luminate/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/luminate/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Initiative for Community Advancement</title>
+            
+            <link>/funders/initiative-for-community-advancement/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/initiative-for-community-advancement/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Code For All</title>
+            
+            <link>/funders/code-for-all/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/code-for-all/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Cederberg Municipality</title>
+            
+            <link>/funders/cederberg-municipality/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/cederberg-municipality/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Cape Aghulas Municipality</title>
+            
+            <link>/funders/cape-aghulas-municipality/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/cape-aghulas-municipality/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+        <item>
+            <title>Bergrivier Municipality</title>
+            
+            <link>/funders/bergrivier-municipality/</link>
+            <pubDate>Wed, 09 Oct 2024 09:00:36 GMT</pubDate>
+            <guid>/funders/bergrivier-municipality/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+  </channel>
+</rss>
