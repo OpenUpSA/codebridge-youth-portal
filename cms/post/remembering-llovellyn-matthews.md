@@ -26,7 +26,7 @@ He turned his favourite phrase which was in response to the state of gender-base
 
 “Llovellyn was always busy helping people, and he could never, and I mean never, say no to people”, said the Cape Agulhas Youth Council chairperson that succeeded him, Shadè Williams. She went on to say, “The youth, the elderly and his community were everything to him. He served with pride, love and joy. He was never too busy to assist”.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637261770cdf4f6211b8c89e_Llowellyn%20Matthews.jpeg)
+![](/assets/images/downloaded/637261770cdf4f6211b8c89e_LlowellynMatthews.jpeg)
 
 Llovellyn Matthews memorial plaque
 

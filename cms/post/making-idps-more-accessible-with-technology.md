@@ -40,7 +40,7 @@ ICA and OpenUp long standing partnership
 
 Through the years OpenUp has enjoyed a long standing partnership of this with the Initiative for Community Advancement or more commonly known as the ICA. This is an organisation based in the West Coast District, Bergrivier for exactness. I haven’t had the chance over the past year to implement an “experiment project” because time would not allow and that opportunity would never present itself. 
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63f60df434a87635cfc71fb2_TA0O-CZOegBYyDv1maGJkijZ4SoDVREx3cPpv8tdd_vilR3zXNMpGx2BZvAYZZM2Qh56LbHFv9YnBXgxESpyFsKUWK_03ZsNaukBnsq6RKdn3eWYI6slRMjpMlcNyq4TikI-4xyCbgteH5y-g7m2mR8.png)
+![](/assets/images/downloaded/63f60df434a87635cfc71fb2_TA0O-CZOegBYyDv1maGJkijZ4SoDVREx3cPpv8tdd_vilR3zXNMpGx2BZvAYZZM2Qh56LbHFv9YnBXgxESpyFsKUWK_03ZsNaukBnsq6RKdn3eWYI6slRMjpMlcNyq4TikI-4xyCbgteH5y-g7m2mR8.png)
 
 So when ICA reached out to me with a municipal dataset that included IDP projects for Bergrivier, I jumped at the opportunity to explore how best to visualise and present this data in a manner that would bring value to this organisation.
 
@@ -62,20 +62,20 @@ Project Costs budgeted for by the Municipality
 
 ‍
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63f60e5534a876160cc7230a_Xdt5zZK-iRU0qMZ6QEg--O8FIy30tumTmTfOBRI-4Zm09OBQ5feFmFiFBf5Ru8-hOmwwmLjmEElnUDSOn4TNaOf2jdrS_p3mRq62jkDyPolpSNdGyYerDV-dZ5K2cpjzRjjaGvZZY6nxHXnpS28rKjc.png)
+![](/assets/images/downloaded/63f60e5534a876160cc7230a_Xdt5zZK-iRU0qMZ6QEg--O8FIy30tumTmTfOBRI-4Zm09OBQ5feFmFiFBf5Ru8-hOmwwmLjmEElnUDSOn4TNaOf2jdrS_p3mRq62jkDyPolpSNdGyYerDV-dZ5K2cpjzRjjaGvZZY6nxHXnpS28rKjc.png)
 
 Show to the right all the projects linked to a specific function in the municipality. As mentioned in the previous paragraph, not all projects are funded by the municipality, the above graph showcases the municipal funded projects. It is important to note that all the inputs received are categorised into three, Community, Ward Committee or Municipal (internal process of collecting information from officials.)
 
 Detailed Project Breakdown
 --------------------------
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63f60ea74261ff34900bee1c_XL8N3Bnv6vuMu_SghrZWCja2_IEg0Cyrj-2V1JUKl-1XSAeTl_HPjgRT-orHj7WsqRxkKQGa8m5ueFM8KqVSWqtk9c_XZdbtdWV9iRxPImwXtYwDmqSDLckcHh1w1d9iS2eT3LsIFcAq_edw4UN6mBY.png)
+![](/assets/images/downloaded/63f60ea74261ff34900bee1c_XL8N3Bnv6vuMu_SghrZWCja2_IEg0Cyrj-2V1JUKl-1XSAeTl_HPjgRT-orHj7WsqRxkKQGa8m5ueFM8KqVSWqtk9c_XZdbtdWV9iRxPImwXtYwDmqSDLckcHh1w1d9iS2eT3LsIFcAq_edw4UN6mBY.png)
 
 To give greater context to the data collected, each project can be further reviewed with a more detailed project breakdown section. This also provides a breakdown of cost by financial year. Again, based on your initial town selection this list of projects will reflect your selection choice made. 
 
 I wanted to make sure when reading this article, you understand that the inputs received are not always the mandate or responsibility of the Municipality. Municipalities though are closest to the citizens, in a way, this makes them the target for all kinds of requests. 
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63f60ebd7e73e5a4d3be95f1_U8PdeNjEVdlbFAV0WydUCMjzyDX63jgBnx96YH7KA1Kqo81tdJM9m_vU-phNrQZF2A7IGZKXgC4svqrQJnJeJatGwDUra_MAdcfNc7bCHHgN0267ThLwqLSNW4YGoFNnv4VA6sEIGFIpILzPqqmVhMU.png)
+![](/assets/images/downloaded/63f60ebd7e73e5a4d3be95f1_U8PdeNjEVdlbFAV0WydUCMjzyDX63jgBnx96YH7KA1Kqo81tdJM9m_vU-phNrQZF2A7IGZKXgC4svqrQJnJeJatGwDUra_MAdcfNc7bCHHgN0267ThLwqLSNW4YGoFNnv4VA6sEIGFIpILzPqqmVhMU.png)
 
 Above is a breakdown of inputs received and part of the Bergrivier Municipal IDP.
 

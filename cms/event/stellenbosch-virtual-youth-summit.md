@@ -11,7 +11,7 @@ title: Stellenbosch Virtual Youth Summit
 f_venue: Online
 f_image:
   url: >-
-    https://cdn.prod.website-files.com/5d2709341443e07ee7ccd710/6034c0b761ecce3fe525fb60_cby-gallery-home%20(2%20of%2011).JPG
+    https://cdn.prod.website-files.com/5d2709341443e07ee7ccd710/6034c0b761ecce3fe525fb60_cby-gallery-home2011.JPG
   alt: null
 slug: stellenbosch-virtual-youth-summit
 f_event-locations:

@@ -33,7 +33,7 @@ The Witzenberg valley is famous for its exports of fruit, vegetables, olives, an
 Who participated in the survey?
 -------------------------------
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499b81773fff4457a0c9_3J24K5XndlqJrcasmeWNxEmkB3IrQGyhH83XmiqKq4CwLNDI88_dak51etkPDp77YFdPGJKk9yR4sYP6hPNoAHH_kR05UJgzrg8xHg2QjigvFK8_nL7KFlOE2aA0y_1-q3v3yE_LRfffj1-Rr1BAq7o8ZfENj3fBAXqoHdzF1G3A1J5SS2lUhy8BEQVCNQ.png)
+![](/assets/images/downloaded/637f499b81773fff4457a0c9_3J24K5XndlqJrcasmeWNxEmkB3IrQGyhH83XmiqKq4CwLNDI88_dak51etkPDp77YFdPGJKk9yR4sYP6hPNoAHH_kR05UJgzrg8xHg2QjigvFK8_nL7KFlOE2aA0y_1-q3v3yE_LRfffj1-Rr1BAq7o8ZfENj3fBAXqoHdzF1G3A1J5SS2lUhy8BEQVCNQ.png)
 
 Survey respondents by sex and place of residence
 
@@ -41,7 +41,7 @@ Out of a total of 231 responses, 150 people identified as female and 76 as male.
 
 A similar issue is found when we look at age distribution. Although the Community Survey suggests most residents are under the age of 29, the majority of respondents are over the age of 30.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499aaecf4c9ceb23cd7f_KjBhdVBjALjPoRMB25Rp6kBBG2M6TdzVFbyTjGc80kw9Y6Afm0tES7BbKo-dKo0e_fvradPMpOsuZVZkIU3Br5CowLfJceKf3dIDkfxQF4yTK9z8dzqtLQbfm6FowdimQgozjs9tg_to9X99yUUGofMzfUZJ45h6na_k88_dzAlUUA8mxOEyWwLASdI7lQ.png)
+![](/assets/images/downloaded/637f499aaecf4c9ceb23cd7f_KjBhdVBjALjPoRMB25Rp6kBBG2M6TdzVFbyTjGc80kw9Y6Afm0tES7BbKo-dKo0e_fvradPMpOsuZVZkIU3Br5CowLfJceKf3dIDkfxQF4yTK9z8dzqtLQbfm6FowdimQgozjs9tg_to9X99yUUGofMzfUZJ45h6na_k88_dzAlUUA8mxOEyWwLASdI7lQ.png)
 
 Age and sex of survey respondents
 
@@ -52,7 +52,7 @@ What did respondents say about healthcare in Witzenberg?
 
 The average waiting time to see a nurse was two hours and forty-six minutes. 53% of the participants indicated that they waited in lines outside the clinic for between 2-4 hours to be assessed by a nurse or medical official. More than half said that they have fallen asleep while waiting. Eight out ten said that they had waited outside a clinic taking into account that very few clinics have shade or covering from rain for queueing patients
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499b478d9c4500ae497e_Ov4-6THV5qn5zLCbTCUuWlWbgZ3juBCEKkgeEfh6EEDXNUWG3ckMeqSVxXfBV90GJM3iPQ-VLYqzFV8TkUwzK_pdbZb-ILQ7fA4NXpnpB2JWg6GhMel1X3OBarGDuMSFLXR32-8dfLOkUjDMlPAE5lpSXJgovmcGlb0UNigSVN1Da4qxfNmIPO62cnzydQ.png)
+![](/assets/images/downloaded/637f499b478d9c4500ae497e_Ov4-6THV5qn5zLCbTCUuWlWbgZ3juBCEKkgeEfh6EEDXNUWG3ckMeqSVxXfBV90GJM3iPQ-VLYqzFV8TkUwzK_pdbZb-ILQ7fA4NXpnpB2JWg6GhMel1X3OBarGDuMSFLXR32-8dfLOkUjDMlPAE5lpSXJgovmcGlb0UNigSVN1Da4qxfNmIPO62cnzydQ.png)
 
 Estimated waiting times and how many people reported them
 
@@ -60,7 +60,7 @@ Data showed that in terms of the first process of admission to the health facili
 
 When asked why they experienced long wait times, many pointed to issues with staff being either unhelpful or short on the ground. A further 80 people said that they didn’t know why they had been waiting.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499b81773f124f57a0ca_EpmYmQXWZ1QglsYZnttBUSZs89pSIIoyBJgBkkkwWr_FgtEJw20asckIzdL014CN99C1ULhswcsU8cuhKpwmvl8A3maFESIdQeA04D8Ihb7ENIJUg40HkKTN9shfpeelyX8VdFNkTKyLo74GRbBroipMDA-CSeya62j0Js0m1Ql-XEvo3upg8Qs3PqLlsA.png)
+![](/assets/images/downloaded/637f499b81773f124f57a0ca_EpmYmQXWZ1QglsYZnttBUSZs89pSIIoyBJgBkkkwWr_FgtEJw20asckIzdL014CN99C1ULhswcsU8cuhKpwmvl8A3maFESIdQeA04D8Ihb7ENIJUg40HkKTN9shfpeelyX8VdFNkTKyLo74GRbBroipMDA-CSeya62j0Js0m1Ql-XEvo3upg8Qs3PqLlsA.png)
 
 Reasons for waiting and number of respondents reporting
 

@@ -29,7 +29,7 @@ OpenUp generally uses [Google Forms](https://www.google.com/forms/about/) to cre
 
 During the workshop we explained how data can assist the youth better present the challenges that the youth/community faces in Mokopane and which tools to use to find data that will make them understand their community better. As a team we introduced [Youth Explorer](https://www.youthexplorer.org.za/), [WaziMap](https://wazimap.co.za/) and [Municipal Money](https://municipalmoney.gov.za/) tools to the youth. 
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/647eef427f317f025a03ad3a_Phones.jpg)
+![](/assets/images/downloaded/647eef427f317f025a03ad3a_Phones.jpg)
 
 The next segment of the workshop was an introduction to data where we shared some examples and demonstrated how the tools that we had introduced actually worked. We then took the conversation further and shared the role of the [Integrated Development Plan (IDP)](https://www.pa.org.za/blog/everything-you-need-know-about-integrated-developm) and municipal budget for young people to check if the issues that they identified were prioritised by the municipality and whether or not they had a budget allocated to them. The participants were asked to identify challenges in their community and support it with data as well as a possible resolution to the challenge. Some of the challenges that the participants raised include: 
 
@@ -49,11 +49,11 @@ The participants were split into groups where they used the above mentioned tool
 
 A post workshop survey  was completed by the participants and this data showed that they had learned a lot. 
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/647eefe17f317f025a044e53_Chart%201.jpg)
+![](/assets/images/downloaded/647eefe17f317f025a044e53_Chart.jpg)
 
 A majority of the participants were keen to use the civic tech tools that they had learned about i the workshop.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/647ef002b707a7b0f9746c07_Chart%202.jpg)
+![](/assets/images/downloaded/647ef002b707a7b0f9746c07_Chart.jpg)
 
 96.7% of the participant indicated that they would use data to understand issues in the municipalities moving forward.
 
@@ -62,6 +62,6 @@ The participants were interested in attending another data workshop and gave inp
 **Way forward and conclusion** 
 -------------------------------
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/647ef07fe05b12f6a5efcac2_People.jpg)
+![](/assets/images/downloaded/647ef07fe05b12f6a5efcac2_People.jpg)
 
 The workshop was well attended by youth who showed interest and willingness to engage and participate in further data skills workshops for the benefit of the community. The participants are clear on the projects that they want to work on to improve their community. They have shown interest in [OpenUp](https://openup.org.za/), [Geekucha](https://www.geekulcha.dev/) and [HSRC](https://hsrc.ac.za/) to come back and train them on the necessary digital and data skills that they can use to improve service delivery and other challenges in their community. It is in this regard that OpenUp is proposing a Youth Summit in Mokopane in partnership with Geekulcha and HSRC to establish a Codebridge Youth project in which we turn the youth from problem identifiers to solution oriented participants. In addition,assist them identify projects that they can work on and train them on the data & digital and communication skills that they can use to carry the projects.

@@ -18,10 +18,10 @@ seo:
     from the Codebridge Youth community. Learn about the impact our members and
     youth councils are having in their communities."
     property="twitter:description"><meta
-    content="https://uploads-ssl.webflow.com/5d1dc1f4bbf6021b1557cddf/5ebd22e2e0b1c081ae6bd69b_cby-gallery-home%20(8%20of%2011).JPG"
+    content="/assets/images/downloaded/5ebd22e2e0b1c081ae6bd69b_cby-gallery-home2011.JPG"
     property="twitter:image"><meta property="og:type" content="website">
   og:image: >-
-    https://uploads-ssl.webflow.com/5d1dc1f4bbf6021b1557cddf/5ebd22e2e0b1c081ae6bd69b_cby-gallery-home%20(8%20of%2011).JPG
+    /assets/images/downloaded/5ebd22e2e0b1c081ae6bd69b_cby-gallery-home2011.JPG
   twitter:title: News | Codebridge Youth
 ---
 

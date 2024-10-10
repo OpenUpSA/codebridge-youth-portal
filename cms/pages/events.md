@@ -17,10 +17,10 @@ seo:
     property="og:description"><meta content="Find out about the latest events
     within the Codebridge Youth community. From training and community meetups,
     to local participation." property="twitter:description"><meta
-    content="https://uploads-ssl.webflow.com/5d1dc1f4bbf6021b1557cddf/63119669d5958116d59d4d35_5ebd22e28c3100736e3603e8_cby-gallery-home%20(7%20of%2011).webp"
+    content="/assets/images/downloaded/63119669d5958116d59d4d35_5ebd22e28c3100736e3603e8_cby-gallery-home.webp"
     property="twitter:image"><meta property="og:type" content="website">
   og:image: >-
-    https://uploads-ssl.webflow.com/5d1dc1f4bbf6021b1557cddf/63119669d5958116d59d4d35_5ebd22e28c3100736e3603e8_cby-gallery-home%20(7%20of%2011).webp
+    /assets/images/downloaded/63119669d5958116d59d4d35_5ebd22e28c3100736e3603e8_cby-gallery-home.webp
   twitter:title: Events | Cedebridge Youth
 ---
 

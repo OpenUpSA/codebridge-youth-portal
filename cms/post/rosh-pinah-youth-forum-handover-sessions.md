@@ -57,19 +57,19 @@ The different groups had different outcomes to accomplish from the handover sess
 
 The stakeholders and partnerships team developed their own stakeholder matrix along with a stakeholder database that will be used in conjunction with the communications team in relation to the various matters that affect the Rosh Pinah Youth Forum and the general youth in Rosh Pinah.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/6391a955a406ca3c685f9dd7_Screenshot%202022-12-07%20at%2016.25.50.png)
+![](/assets/images/downloaded/6391a955a406ca3c685f9dd7_Screenshot%202022-12-07%20at%2016.25.50.png)
 
 A screenshot of a stakeholder mapping exercise using the Google Jamboard
 
 The training and development team were taken through a training session where they learned how to use the online graphic design tool, [Canva](https://www.canva.com/) where they designed posters for the events that they had coming up. They also created their first slide deck to be used as a template for future training sessions.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/6391a9bf8df55da2fd10e932_RP%20youth%20test%20poster.png)
+![](/assets/images/downloaded/6391a9bf8df55da2fd10e932_RP%20youth%20test%20poster.png)
 
 A poster for an upcoming event made one Canva after the tutorial
 
 The project management team went through an intense workshop where the OpenUp senior project manager was also in attendance to provide guidance and clarity. The second half of the workshop consisted of a walkthrough for the project management tool, [Trello](https://trello.com/).
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/6391aa169b6a8091025eb094_RP%20trello%202.png)
+![](/assets/images/downloaded/6391aa169b6a8091025eb094_RP%20trello%202.png)
 
 The Rosh Pinah youth used the project management software Trello to keep track of their current projects
 
@@ -77,4 +77,4 @@ The communications team learned how to write blog posts and how to maintain an o
 
 Subscribe to the Rosh Pinah Youth forum newsletter by the following link: [http://eepurl.com/ien8pD](http://eepurl.com/ien8pD) and follow [Codebridge Youth  - Rosh Pinah](https://www.facebook.com/profile.php?id=100084100390203) on Facebook.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/6391aae3f0888280c4b2bc8f_Newsletter%20screenshot.png)
+![](/assets/images/downloaded/6391aae3f0888280c4b2bc8f_Newsletter%20screenshot.png)

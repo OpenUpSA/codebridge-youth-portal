@@ -12,7 +12,7 @@ title: CAM Youth Summit
 f_venue: 'Online '
 f_image:
   url: >-
-    https://cdn.prod.website-files.com/5d2709341443e07ee7ccd710/602a2bf8d368dee691fb3e4b_cby-gallery-home%20(6%20of%2011).JPG
+    https://cdn.prod.website-files.com/5d2709341443e07ee7ccd710/602a2bf8d368dee691fb3e4b_cby-gallery-home2011.JPG
   alt: null
 slug: cam-youth-summit
 f_location-displayed-on-card: cms/event-filters/cape-agulhas.md

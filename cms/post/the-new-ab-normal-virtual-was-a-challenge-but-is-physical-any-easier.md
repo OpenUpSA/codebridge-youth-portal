@@ -19,7 +19,7 @@ tags: post
 
 [**Codebridge Youth**](https://codebridgeyouth.org.za/)**, a project that seeks to assist young people in becoming active citizens using** [**OpenUp’s**](https://openup.org.za/) **inform-empower-activate methodology, recently embarked on a series of digital and data literacy workshops. The workshops targeted youth in the rural areas of Cederberg, Witzenberg, and Bergrivier - all municipalities in the Western Cape province of South Africa.**
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63277cff1c814d0dc1714cd4_West%20Coast.png)
+![](/assets/images/downloaded/63277cff1c814d0dc1714cd4_West%20Coast.png)
 
 **Wazimap helps us understand the socio-economic factors at play**
 
@@ -53,7 +53,7 @@ A crisis of infrastructure
 2.  **The computers were unable to download** [**Google Chrome**](https://www.google.com/chrome/)**. Chrome is the most optimal browser for all the web-based lessons that we planned to conduct.**
 3.  **Finally, there appeared to be a network wide block on all Google products, even when logging in using the native and now obsolete** [**Internet Explorer**](https://www.microsoft.com/en-za/download/internet-explorer.aspx)**. Troubleshooting took so much time that it had to be aborted.**
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63277ec0acd3d83e65763cf3_Cederberg%20Hall.jpeg)
+![](/assets/images/downloaded/63277ec0acd3d83e65763cf3_Cederberg%20Hall.jpeg)
 
 **Cederberg youth at a capacity building workshop**
 
@@ -68,7 +68,7 @@ So, what does an infrastructure crisis look like in practice?
 
 **In Cederberg, where the computers did not have Google Chrome and the Wi-Fi was not working, we connected everyone using our mobile phones as hotspots. The computer connected to the projector was too slow to run a virtual presentation from one of our colleagues that attended remotely so we ended up gathering everyone around two laptops and carried on with the remote presentation. A lot of the tools that we went to present practically ended up being presented, orally.**
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63277f42f5839637c7548589_Cederberg%202.jpeg)
+![](/assets/images/downloaded/63277f42f5839637c7548589_Cederberg.jpeg)
 
 **The second workshop in Witzenberg went smoother. Though there wasn’t any Wi-Fi and only 14 computers were present with a turnout of 32 people in a small room without air conditioning, while the temperature outside blazed at 32° Celsius, we somehow managed to make it work - largely in part to having learnt from the mistakes of the week before.**
 
@@ -99,7 +99,7 @@ What we’ve learnt
 But somehow, we made it work
 ----------------------------
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/632780551c814dc4e17184db_Cederberg%203.jpeg)
+![](/assets/images/downloaded/632780551c814dc4e17184db_Cederberg.jpeg)
 
 **Despite the challenges, user research conducted throughout the workshops showed that participants found the lessons valuable and informative:**
 

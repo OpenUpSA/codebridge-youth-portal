@@ -4,7 +4,7 @@ title: Codebridge Youth - Crossing Borders
 slug: codebridge-youth-crossing-borders
 f_main-image:
   url: >-
-    https://cdn.prod.website-files.com/5d2709341443e07ee7ccd710/63277be30bde3544930f14aa_Rosh%20Pinah%201.jpg
+    https://cdn.prod.website-files.com/5d2709341443e07ee7ccd710/63277be30bde3544930f14aa_Rosh%20Pinah.jpg
   alt: null
 updated-on: '2022-11-17T09:08:29.880Z'
 created-on: '2022-09-01T07:30:37.817Z'
@@ -29,7 +29,7 @@ The Rosh Pinah Youth Summit took place at the Community hall on 26 to 28 July 20
 
 Trevali also took the opportunity to introduce youth to “Spot”, the robot dog. Spot is an exciting upcoming addition to Trevali's Rosh Pinah mining operations. Trevali aims to leverage Spot's state-of-the-art robot technology to automate routine inspection tasks, perform long-distance operations, and capture data in a safe, accurate and timely manner.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/631898745480dd39a67f789d_yQMSwYzDlsgGkGRRZTof-jIg86gKLD3Gac0-lcNrOkN5qRAbQx9Srhb5r-g2vN8ju0-XFDVALNdhQkHfS5t9ZN8wRmjMWu05lQ-TVLLvgH32TtQRHeAyhsIjCEgoM4LuXCZ3nn3WUEhGR8yUseXgaWMEgp8_a1B5SE0Gt6T33vO7htTMKAxIN2eIe6CxqOhPVbDTuw.jpeg)
+![](/assets/images/downloaded/631898745480dd39a67f789d_yQMSwYzDlsgGkGRRZTof-jIg86gKLD3Gac0-lcNrOkN5qRAbQx9Srhb5r-g2vN8ju0-XFDVALNdhQkHfS5t9ZN8wRmjMWu05lQ-TVLLvgH32TtQRHeAyhsIjCEgoM4LuXCZ3nn3WUEhGR8yUseXgaWMEgp8_a1B5SE0Gt6T33vO7htTMKAxIN2eIe6CxqOhPVbDTuw.jpeg)
 
 During the three days, the facilitators of OpenUp, Adrian Kearns, Khumo Sello, [Katlego Mohlabane](mailto:katlego@openup.org.za) and Damian Pool, were able to engage the youth in critical areas focusing on:  “ what it's like to be a youth in Rosh Pinah, what makes them belong and connected, what opportunities exist and they seek, what change they would like to see, and lastly, how they would like to influence decision making in their communities.”
 
@@ -37,7 +37,7 @@ Youth were divided into groups and engaged on the above topics, with the facilit
 
 Over the next 3-6 months, OpenUp, in collaboration with Trevali and other key stakeholders, will provide the necessary support, resources and skills training to ensure the CBY Forum in Rosh Pinah is driving change in the community and is the voice of the youth.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/6318987474fab23ac9cc2d89_1PAaYHjFXFsy-VkRNNjvXpF8asehFgMtQ1OV2rLtXmpZ7DZ6m-hXEAm_6Xklt5RjpNadkeWZeBBNgcw_assakUK4vRbTMeQ2NuEpzemxOnwedw-BSQTiiDZnQOQjoPk5GhR-Vj7M27aRKRY_B-lkWOHNUeFKq47yD8XYi1KoVWhw8rnuj--loFLWfYzXW3dCJBKtkA.jpeg)
+![](/assets/images/downloaded/6318987474fab23ac9cc2d89_1PAaYHjFXFsy-VkRNNjvXpF8asehFgMtQ1OV2rLtXmpZ7DZ6m-hXEAm_6Xklt5RjpNadkeWZeBBNgcw_assakUK4vRbTMeQ2NuEpzemxOnwedw-BSQTiiDZnQOQjoPk5GhR-Vj7M27aRKRY_B-lkWOHNUeFKq47yD8XYi1KoVWhw8rnuj--loFLWfYzXW3dCJBKtkA.jpeg)
 
 _Above the newly elected Codebridge Youth Forum members. They will be upskilled to implement various projects as identified by the youth at the Summit._
 

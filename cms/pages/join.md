@@ -17,10 +17,10 @@ seo:
     one!" property="og:description"><meta content="Choose a community and
     sign-up to become a member. If you don't see a community for your area, get
     in touch and let's start building one!" property="twitter:description"><meta
-    content="https://uploads-ssl.webflow.com/5d1dc1f4bbf6021b1557cddf/5ebd22e2ce53847a1a7a1235_cby-gallery-home%20(6%20of%2011).JPG"
+    content="/assets/images/downloaded/5ebd22e2ce53847a1a7a1235_cby-gallery-home2011.JPG"
     property="twitter:image"><meta property="og:type" content="website">
   og:image: >-
-    https://uploads-ssl.webflow.com/5d1dc1f4bbf6021b1557cddf/5ebd22e2ce53847a1a7a1235_cby-gallery-home%20(6%20of%2011).JPG
+    /assets/images/downloaded/5ebd22e2ce53847a1a7a1235_cby-gallery-home2011.JPG
   twitter:title: Join a Community | Codebridge Youth
 ---
 

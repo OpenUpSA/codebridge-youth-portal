@@ -29,13 +29,13 @@ The Witzenberg valley is famous for its exports of fruit, vegetables, olives, an
 
 The difficulties residents face have been well documented. Over two years ago, IOL published an [article](https://www.iol.co.za/capetimes/news/witzenberg-residents-demand-service-power-change-at-embattled-ceres-hospital-2413738f-90c7-4236-874c-736e374d09e5) reporting on local frustrations and Witzenberg residents’ demands for change in management at Ceres Provincial Hospital. In March 2022, The Daily Maverick wrote [about](https://www.dailymaverick.co.za/article/2022-05-04-frustrations-mount-in-witzenberg-community-over-poor-service-at-ceres-hospital/) the struggle to access quality health care services, staff shortages, limited bed capacity, and long waiting periods at the same hospital. According to a WJC representative, “ Despite the Western Cape Department of Health having a clean audit, Witzenberg community has five ambulances, patients are still sleeping on chairs at Ceres Provincial Hospital and they do not have enough doctors. Op Die Berg is 52 Kilometres outside Ceres, the doctor visits them once a week.”
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63ecb295cdb7e7f0c6a1138b_sjXVtG2Fy5OKJjMTka19liW-eL24xgXWUXwYSuIOZe2nGIehmMB2BWyFgRqgiJm_Efy2GV-jARVhLcpf-dY4rn6bXkXzcj5Pj0bjOGttH3rSUjMcPndXkFH303YU43iq5GZmjc5VZQqxtByuyZdxY3E.png)
+![](/assets/images/downloaded/63ecb295cdb7e7f0c6a1138b_sjXVtG2Fy5OKJjMTka19liW-eL24xgXWUXwYSuIOZe2nGIehmMB2BWyFgRqgiJm_Efy2GV-jARVhLcpf-dY4rn6bXkXzcj5Pj0bjOGttH3rSUjMcPndXkFH303YU43iq5GZmjc5VZQqxtByuyZdxY3E.png)
 
 Taking all this into account, it came as no shock when, during a [Codebridge Youth](https://codebridgeyouth.org.za/) Data Literacy workshop for local youth hosted by [OpenUp](https://openup.org.za/) in partnership with WJC, attendees identified basic and health services as amongst the key challenges faced by the community that they wanted to address using data. 
 
 Through the Codebridge Youth Data Literacy Project, OpenUp works with young people around the country to teach digital skills alongside data skills centred around data collection, analysis, and storytelling. In doing so, it aims to empower them to tell accurate, engaging stories about their experiences, and motivate for positive change using new online data tools. Coupled with this, OpenUp also teaches youth about the very important responsibility they have in local government citizen participation processes.  
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63ecb3ba82ad9135aceb3507_WJC100.png)
+![](/assets/images/downloaded/63ecb3ba82ad9135aceb3507_WJC100.png)
 
 Above: Witzenberg youth on the ground collecting data in their community. 
 
@@ -44,7 +44,7 @@ Attendees of the workshop wanted to learn more about the common experiences of l
 Who participated in the survey?
 -------------------------------
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499b81773fff4457a0c9_3J24K5XndlqJrcasmeWNxEmkB3IrQGyhH83XmiqKq4CwLNDI88_dak51etkPDp77YFdPGJKk9yR4sYP6hPNoAHH_kR05UJgzrg8xHg2QjigvFK8_nL7KFlOE2aA0y_1-q3v3yE_LRfffj1-Rr1BAq7o8ZfENj3fBAXqoHdzF1G3A1J5SS2lUhy8BEQVCNQ.png)
+![](/assets/images/downloaded/637f499b81773fff4457a0c9_3J24K5XndlqJrcasmeWNxEmkB3IrQGyhH83XmiqKq4CwLNDI88_dak51etkPDp77YFdPGJKk9yR4sYP6hPNoAHH_kR05UJgzrg8xHg2QjigvFK8_nL7KFlOE2aA0y_1-q3v3yE_LRfffj1-Rr1BAq7o8ZfENj3fBAXqoHdzF1G3A1J5SS2lUhy8BEQVCNQ.png)
 
 Survey respondents by sex and place of residence.
 
@@ -52,7 +52,7 @@ Out of a total of 231 responses, 150 people identified as female and 76 as male.
 
 A similar issue is found when we look at age distribution. Although the Community Survey suggests most residents are under the age of 29, the majority of respondents are over the age of 30.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499aaecf4c9ceb23cd7f_KjBhdVBjALjPoRMB25Rp6kBBG2M6TdzVFbyTjGc80kw9Y6Afm0tES7BbKo-dKo0e_fvradPMpOsuZVZkIU3Br5CowLfJceKf3dIDkfxQF4yTK9z8dzqtLQbfm6FowdimQgozjs9tg_to9X99yUUGofMzfUZJ45h6na_k88_dzAlUUA8mxOEyWwLASdI7lQ.png)
+![](/assets/images/downloaded/637f499aaecf4c9ceb23cd7f_KjBhdVBjALjPoRMB25Rp6kBBG2M6TdzVFbyTjGc80kw9Y6Afm0tES7BbKo-dKo0e_fvradPMpOsuZVZkIU3Br5CowLfJceKf3dIDkfxQF4yTK9z8dzqtLQbfm6FowdimQgozjs9tg_to9X99yUUGofMzfUZJ45h6na_k88_dzAlUUA8mxOEyWwLASdI7lQ.png)
 
 Age and sex of survey respondents.
 
@@ -63,7 +63,7 @@ What did respondents say about healthcare in Witzenberg?
 
 The average waiting time to see a nurse was two hours and forty-six minutes. 53% of the participants indicated that they waited in lines outside the clinic for between 2-4 hours to be assessed by a nurse or medical official. More than half said that they have fallen asleep while waiting. Eight out of ten said that they had waited outside a clinic taking into account that very few clinics have shade or covering from rain for queueing patients
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499b478d9c4500ae497e_Ov4-6THV5qn5zLCbTCUuWlWbgZ3juBCEKkgeEfh6EEDXNUWG3ckMeqSVxXfBV90GJM3iPQ-VLYqzFV8TkUwzK_pdbZb-ILQ7fA4NXpnpB2JWg6GhMel1X3OBarGDuMSFLXR32-8dfLOkUjDMlPAE5lpSXJgovmcGlb0UNigSVN1Da4qxfNmIPO62cnzydQ.png)
+![](/assets/images/downloaded/637f499b478d9c4500ae497e_Ov4-6THV5qn5zLCbTCUuWlWbgZ3juBCEKkgeEfh6EEDXNUWG3ckMeqSVxXfBV90GJM3iPQ-VLYqzFV8TkUwzK_pdbZb-ILQ7fA4NXpnpB2JWg6GhMel1X3OBarGDuMSFLXR32-8dfLOkUjDMlPAE5lpSXJgovmcGlb0UNigSVN1Da4qxfNmIPO62cnzydQ.png)
 
 Estimated waiting times and how many people reported them.
 
@@ -71,7 +71,7 @@ Data showed that in terms of the first process of admission to the health facili
 
 When asked why they experienced long wait times, many pointed to issues with staff being either unhelpful or short on the ground. A further 80 people said that they didn’t know why they had been waiting.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/637f499b81773f124f57a0ca_EpmYmQXWZ1QglsYZnttBUSZs89pSIIoyBJgBkkkwWr_FgtEJw20asckIzdL014CN99C1ULhswcsU8cuhKpwmvl8A3maFESIdQeA04D8Ihb7ENIJUg40HkKTN9shfpeelyX8VdFNkTKyLo74GRbBroipMDA-CSeya62j0Js0m1Ql-XEvo3upg8Qs3PqLlsA.png)
+![](/assets/images/downloaded/637f499b81773f124f57a0ca_EpmYmQXWZ1QglsYZnttBUSZs89pSIIoyBJgBkkkwWr_FgtEJw20asckIzdL014CN99C1ULhswcsU8cuhKpwmvl8A3maFESIdQeA04D8Ihb7ENIJUg40HkKTN9shfpeelyX8VdFNkTKyLo74GRbBroipMDA-CSeya62j0Js0m1Ql-XEvo3upg8Qs3PqLlsA.png)
 
 Reasons for waiting and number of respondents reporting.
 
@@ -88,7 +88,7 @@ Despite these challenges, however, participants seemed happy with the healthcare
 *   The community from Op Die Berg handed over demands to the Western Cape Department of Health on 14 October 2022, some of the demands include a 24 hours ambulance at the Clinic and more doctors. On 25 October they were informed that they will not get.  
 *   On 05 November 2022, health activists gathered with a young academic from Ceres and a medical practitioner to explain the TRIAGE SYSTEM  being used at Ceres Provincial Hospital and others.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/63ecb296fa72854109a02583_uh-E4pf-B1wXhOAMJXHW4ryfWiOXpJFWFwZwtyWMU2KIb7Ic5378Em-9ZXt2VePGbwyeBktsvjZ7s0tvZecSWE7Bc95c2s-V97QbUNc-X3qXMlXFwJor7qMbz7JZUs0EaJL61NFu_sG4HybaZlxZmKs.png)
+![](/assets/images/downloaded/63ecb296fa72854109a02583_uh-E4pf-B1wXhOAMJXHW4ryfWiOXpJFWFwZwtyWMU2KIb7Ic5378Em-9ZXt2VePGbwyeBktsvjZ7s0tvZecSWE7Bc95c2s-V97QbUNc-X3qXMlXFwJor7qMbz7JZUs0EaJL61NFu_sG4HybaZlxZmKs.png)
 
 Interested in supporting and assisting the Witzenberg community solve the health services challenges? Please contact Witzenberg Justice Coalition at [fight4waterjustice@gmail.com](http://fight4waterjustice@gmail.com)
 

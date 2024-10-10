@@ -56,7 +56,7 @@ The stakeholders that make up the working group also presented the work that the
 
 A combination of the work that we have been doing in the Bergrivier area and the  working group meetings have already spawned a product. The [Bergrivier IDP dashboard](https://theinitiative.org.za/idp-dashboard/) that presents municipal budget data in an easy to read and searchable format.
 
-![](https://uploads-ssl.webflow.com/5d2709341443e07ee7ccd710/6384c3db30aa4b20b2997456_729y8bY6mELFQ1ppI1DhiKJcGYOtFKohBv_QTn8AqaGZss3uDKIU_DFannDApX3yYyr04eBrOBGuH1kNqtCR1trTLxUL91t4LxjyRhvO3Fxh70hTcCRJF6HM2aZaEW8_cuvMwGsrfO8PrxMQyyqd5T4hiwRNOGMKlZBPQDjDj6xkeFDvrwFd-abCt3Eylg.png)
+![](/assets/images/downloaded/6384c3db30aa4b20b2997456_729y8bY6mELFQ1ppI1DhiKJcGYOtFKohBv_QTn8AqaGZss3uDKIU_DFannDApX3yYyr04eBrOBGuH1kNqtCR1trTLxUL91t4LxjyRhvO3Fxh70hTcCRJF6HM2aZaEW8_cuvMwGsrfO8PrxMQyyqd5T4hiwRNOGMKlZBPQDjDj6xkeFDvrwFd-abCt3Eylg.png)
 
 A snapshot of the Bergrivier IDP dashboard.
 
